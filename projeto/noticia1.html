@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomes News - Noticia</title>
+    <link rel="shortcut icon" href="imagens/microfone.png" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        :root {
+            --cor1: #0FC2C0;
+            --cor2: #0CABA8;
+            --cor3: #008F8C;
+            --cor4: #015958;
+            --cor5: #023535;
+            --preto: rgba(0, 0, 0, 0.705); 
+            
+            --fonte-padrao: arial, verdana, helvetica, sans-serif;
+            --fonte-destaque: "Bebas Neue", sans-serif;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: var(--fonte-padrao);
+        }
+
+        header{
+            background-color: #023535;
+            padding: 10px;
+        }
+
+        header > h1 {
+            font-family: var(--fonte-destaque);
+            font-size: 3em;
+            text-decoration: underline;
+            text-align: center;
+            color:var(--cor1);
+        }
+
+        header > p {
+            text-align: center;
+            font-size: 1.3em;
+            color:var(--cor1);
+        }
+
+        nav {
+            background-color: var(--cor1);
+            padding: 10px;
+            box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
+        }
+
+        nav > a {
+            color: var(--cor5);
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.8s;
+
+        }
+
+        nav > a:hover {
+            background-color: var(--cor3);
+        }
+
+        main {
+            margin: auto;
+            min-width: 500px;
+            max-width: 880px;
+            padding: 20px;
+        }
+
+        main h2 {
+            text-align: center;
+            font-family: var(--fonte-destaque);
+            font-size: 1.9em;
+            margin-top: 50px;
+        }
+
+        main p {
+            text-align: justify;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        main img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gomes News</h1>
+        <p>o seu site de noticias sobre o mundo da bola é aqui!</p>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="#">Fale Conosco</a>
+        <a href="#">Meu Clube</a> 
+    </nav>
+    <main>
+        <h2>
+            Coutinho de volta ao Vasco
+        </h2>
+        <p>
+            Philippe Coutinho foi oficialmente apresentado como novo reforço do Vasco na tarde desta quinta-feira, em um evento na Sede Náutica da Lagoa. Aos 32 anos, ele garante que está em forma depois de mais de uma década rodando em clubes de futebol europeu e não esconde a ansiedade de voltar a vestir a camisa do clube que o revelou.
+        </p>
+        <picture>
+            <source media="(max-width: 892px)" srcset="imagens/coutinhom.png" type="image/png">
+            <img src="imagens/coutinho.png" alt="Coutinho com a camisa do vasco">
+        </picture>
+        <p>
+            Philippe Coutinho será emprestado pelo Aston Villa por um ano. Na apresentação, o presidente Pedrinho reforçou que a vontade do jogador foi providencial para que o negócio fosse fechado.
+        </p>
+        <p>  
+            - Eu quero agradecer muito, muito ao Coutinho e toda a sua família, esse momento que a gente está vivendo aqui foi um esforço tremendo que o Coutinho fez, né? De mundo que ajustou isso tudo pra gente. Eu me sinto muito honrado de poder trazer um ídolo, a essência da palavra, porque um ídolo não é só dentro de campo, o Coutinho é um ídolo fora de campo pelo seu comportamento, um cara íntegro, que é a essência do Vasco. A gente também se esforçou muito para que a gente pudesse trazer o Coutinho de volta, porque a gente sabe o impacto técnico que ele tem no grupo - disse Pedrinho.
+        </p>
+    </main>
+    <footer>
+        <p>
+            Noticia retirada do site do GE.Globo
+        </p>
+    </footer>
+</body>

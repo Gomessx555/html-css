@@ -83,6 +83,10 @@ main p {
     background-image: linear-gradient(to right, var(--cor3), transparent);
 }
 
+main img {
+    width: 100%;
+}
+
 div {
     margin: 10px 0px;
 }
