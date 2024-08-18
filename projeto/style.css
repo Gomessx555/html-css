@@ -108,3 +108,13 @@ div.link > a:hover {
     padding: 5px;
     text-decoration: underline;
 }
+
+footer {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--cor1);
+}
