@@ -63,7 +63,7 @@ nav > a:hover {
 
 main {
     margin: auto;
-    min-width: 500px;
+    min-width: 300px;
     max-width: 880px;
     padding: 20px;
 }
@@ -84,7 +84,9 @@ main p {
 }
 
 main img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto
 }
 
 div {
