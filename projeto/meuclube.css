@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
-    --cor1: #0FC2C0;
-    --cor2: #0CABA8;
-    --cor3: #008F8C;
-    --cor4: #015958;
-    --cor5: #023535;
-    --preto: rgba(0, 0, 0, 0.705); 
-    
+    --cor1: #DB0900;
+    --cor2: #B21F1A;
+    --cor3: #8A2623;
+    --cor4: #3D393A;
+    --cor5: #6A6466;
+    --preto: rgb(0, 0, 0); 
+            
     --fonte-padrao: arial, verdana, helvetica, sans-serif;
     --fonte-destaque: "Bebas Neue", sans-serif;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 header{
-    background-color: #023535;
+    background-color: var(--preto);
     padding: 10px;
 }
 
@@ -36,20 +36,28 @@ header > h1 {
     color:var(--cor1);
 }
 
+header img {
+    padding-bottom: 15px;
+    margin: auto;
+    display: block;
+    width: 80px;
+}
+
 header > p {
     text-align: center;
+    font-family: var(--fonte-destaque);
     font-size: 1.3em;
-    color:var(--cor1);
+    color:var(--cor2);
 }
 
 nav {
-    background-color: var(--cor1);
+    background-image: linear-gradient(to right, var(--cor1), #db0700c0);
     padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.192);
 }
 
 nav > a {
-    color: var(--cor5);
+    color: var(--preto);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -65,49 +73,39 @@ main {
     margin: auto;
     min-width: 300px;
     max-width: 880px;
-    padding: 20px;
 }
 
 main h2 {
     text-align: center;
     font-family: var(--fonte-destaque);
-    font-size: 1.7em;
-    margin-top: 50px;
-}
-
-main p {
-    text-align: justify;
-    font-size: 1.1em;
-    padding: 5px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(to right, var(--cor3), transparent);
+    font-size: 2.2em;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, var(--cor1), #db070057);
 }
 
 main img {
-    max-width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    max-width: 300px;
     display: block;
-    margin: auto
+    margin: auto;
 }
 
-div {
-    margin: 10px 0px;
-}
-
-div.link {
+div > div.geral {
+    background-image: linear-gradient(to left, var(--cor1), #db070057);
     text-align: center;
     padding: 10px;
-    background-color: var(--cor3);
 }
 
-div.link > a{
-    padding: 5px;
+div.geral > a {
+    font-family: var(--fonte-destaque);
+    font-size: 1.1em;
+    padding: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
-div.link > a:hover {
-    background-color: var(--cor4);
-    padding: 5px;
+div.geral > a:hover {
     text-decoration: underline;
 }
 
